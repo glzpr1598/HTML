@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>regist page</title>
+    </head>
+    <body>
+        <h1>회원가입</h1>
+        <hr>
+        <form action="" method="get">
+            <!-- 회원가입 테이블 -->
+            <table border="1px">
+                <tr>
+                    <th>아이디</th>
+                    <td>
+                        <input type="text" name="id" placeholder="아이디를 입력하세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td>
+                        <input type="password" name="pw" placeholder="비밀번호를 입력하세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td>
+                        <!-- 비밀번호 확인은 name이 필요없음. JavaScript에서 확인 -->
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>
+                        <!-- HTML5 기능. @가 있는지 확인. 자주 사용하지 않음 -->
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th>생년월일</th>
+                    <td>
+                        <!-- HTML5 기능.
+                        <input type="date" name="userBirth">
+                        -->
+                        <!-- select 태그 활용 -->
+                        <select name="year">
+                            <option value="1985">1985</option>
+                            <option value="1986">1986</option>
+                            <option value="1987">1987</option>
+                            <option value="1988">1988</option>
+                            <option value="1989">1989</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993" selected>1993</option>
+                            <!-- selected : 기본값-->
+                        </select>
+                        <select name="month">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="day">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td>
+                        <!-- name이 동일해야 하나만 선택 가능 -->
+                        <!-- checked : 기본값 -->
+                        <input type="radio" name="gender" value="male" checked>남자
+                        <input type="radio" name="gender" value="female">여자
+                    </td>
+                </tr>
+                <tr>
+                    <th>취미</th>
+                    <td>
+                        <!-- checkbox도 name이 같아야함 -->
+                        <input type="checkbox" name="hobby">독서
+                        <input type="checkbox" name="hobby">운동
+                        <input type="checkbox" name="hobby">게임
+                        <input type="checkbox" name="hobby">낚시
+                    </td>
+                </tr>
+                <tr>
+                    <th>나이</th>
+                    <td>
+                        <!-- HTML5 기능 -->
+                        <input type="number" name="age" min="1" max="150">
+                    </td>
+                </tr>
+                <tr>
+                    <th>보안등급</th>
+                    <td>
+                        <input type="range" name="security" min="0" max="20" step="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="2">
+                        <input type="submit" value="회원가입">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>table page</title>
+    </head>
+    <body>
+        <!-- 테이블 만들기 -->
+        <table style="width: 100%" border="1px"> <!-- 테이블 선언 -->
+            <caption>SCORE</caption> <!-- 캡션(제목) -->
+            <tr> <!-- 행(table row) -->
+                <th>First name</th> <!-- 헤더(table header) -->
+                <th>Last name</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Eve</td> <!-- 열(table data) -->
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Brown</td>
+                <td>Kim</td>
+                <td>90</td>
+            </tr>
+        </table>
+        <br/>
+        
+        <!-- 열 병합 테이블 만들기 -->
+        <table border="1px">
+            <tr>
+                <th colspan="7">3월 3주차</th> <!-- 열 병합 -->
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+            </tr>
+        </table>
+        <br/>
+        
+        <!-- 행 병합 테이블 만들기 -->
+        <table border="1px">
+            <tr>
+                <th>주차</th>
+                <th>날짜</th>
+            </tr>
+            <tr>
+                <td rowspan="7">3월 3주차</td> <!-- 행 병합 -->
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+            </tr>
+        </table>
+    </body>
+</html>
